@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simon's 7th Birthday — Level 7 Unlocked!</title>
+<meta property="og:image" content="https://x-nbriones.github.io/birthday-invitation/539A9806.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <style>
@@ -491,12 +492,11 @@
     box-shadow:4px 4px 0 rgba(0,0,0,.25);
   }
   .swatch span{ font-size:16px; color:var(--ink); }
+  .swatch.pink .swatch-block{ background:#d76da4; }
   .swatch.cream .swatch-block{ background:#F1E4C0; }
   .swatch.tan .swatch-block{ background:#C9A66B; }
   .swatch.brown .swatch-block{ background:#7A4B2A; }
-  .swatch.darkbrown .swatch-block{ background:#4E2F17; }
-  .swatch.skyblue .swatch-block{ background:#87CEEB; }
-  .swatch.pink .swatch-block{ background:#FFC0CB; }
+  .swatch.darkbrown .swatch-block{ background:#5f381a; }
 
   .dresscode-note{
     font-size:17px;
@@ -573,17 +573,6 @@
     text-align:center;
   }
 
-    .gift-list{
-    text-align:center;
-    max-width:360px;
-    margin:12px auto 18px;
-    font-size:18px;
-    color:var(--ink);
-    padding-left:0;
-    list-style-position:inside;
-  }
-  .gift-list li{ margin-bottom:8px; display:block; }
-
   /* ============ SCREEN: MESSENGER NOTE ============ */
   #screen-note{
     position:relative;
@@ -625,6 +614,17 @@
     margin:18px 0 26px;
   }
 
+  .gift-list{
+    text-align:center;
+    max-width:360px;
+    margin:12px auto 18px;
+    font-size:18px;
+    color:var(--ink);
+    padding-left:0;
+    list-style-position:inside;
+  }
+  .gift-list li{ margin-bottom:8px; display:block; }
+
   /* ============ GOODBYE / EXIT SCREEN ============ */
   #screen-goodbye{
     position:fixed;
@@ -656,6 +656,23 @@
   .chest-icon::before{ content:""; position:absolute; left:0; right:0; top:0; height:18px; background:#9C6B3E; border-bottom:3px solid var(--dirt-dark); }
   .chest-icon::after{ content:""; position:absolute; left:31px; top:16px; width:8px; height:8px; background:var(--gold); border:2px solid var(--gold-dark); }
 
+  .qr-frame{
+    margin:24px auto;
+    width:min(220px, 80vw);
+    height:auto;
+    background:white;
+    border:4px solid var(--ink);
+    padding:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .qr-frame img{
+    width:100%;
+    height:auto;
+    max-width:200px;
+  }
+
   @media (prefers-reduced-motion: reduce){
     *{ animation:none !important; transition:none !important; }
   }
@@ -672,7 +689,7 @@
 </div>
 
 <audio id="bgm" loop preload="auto">
-  <source src="sbgm.mp3" type="audio/mpeg">
+  <source src="https://x-nbriones.github.io/birthday-invitation/sbgm.mp3" type="audio/mpeg">
 </audio>
 <button id="muteBtn" type="button" class="mute-btn" aria-label="Toggle music">🔇</button>
 
@@ -729,14 +746,14 @@
     <h2>WHAT TO WEAR</h2>
     <p class="sub">Here's the dress code for the celebration:</p>
     <div class="swatch-row">
+      <div class="swatch pink"><div class="swatch-block"></div><span>Pink</span></div>
       <div class="swatch cream"><div class="swatch-block"></div><span>Cream</span></div>
       <div class="swatch tan"><div class="swatch-block"></div><span>Tan</span></div>
       <div class="swatch brown"><div class="swatch-block"></div><span>Brown</span></div>
       <div class="swatch darkbrown"><div class="swatch-block"></div><span>Dark Brown</span></div>
-      <div class="swatch skyblue"><div class="swatch-block"></div><span>Sky Blue</span></div>
-      <div class="swatch pink"><div class="swatch-block"></div><span>Pink</span></div>
+      
     </div>
-    <p class="dresscode-note">Wear any shade of brown, cream, blue, or pink — mix, match, or go all in. Let's turn the venue into one big Minecraft world!</p>
+    <p class="dresscode-note">Wear any shade of brown, cream, or pink — mix, match, or go all in. Let's turn the venue into one big Minecraft world!</p>
     <p class="scroll-cue">↓ keep scrolling ↓</p>
   </div>
 </section>
@@ -750,13 +767,21 @@
       <div class="mob pig"><div class="snout"></div></div>
     </div>
     <h2>GIFT GUIDE</h2>
-    <p>If you'd like to bring our way something useful, it'd make our day. But your presence means the most to us, that's more than enough without a fuss.</p>
+    <p>If you'd like to bring something our way, something useful would make our day — but your presence means the most to us; that's more than enough, without a fuss.</p>
     <ul class="gift-list">
       <li>👕 140 cm / 8 y.o. shirt</li>
       <li>🧥 Jacket or Hoodie</li>
       <li>🎮 Minecraft toys / plushies</li>
       <li>💰 Monetary gift</li>
     </ul>
+    <div class="qr-container">
+      <div class="qr-frame">
+        <img src="https://x-nbriones.github.io/birthday-invitation/qr_bank.jpg" alt="Bank QR Code 1" loading="lazy">
+      </div>
+      <div class="qr-frame">
+        <img src="https://x-nbriones.github.io/birthday-invitation/qr_bank2.jpg" alt="Bank QR Code 2" loading="lazy">
+      </div>
+    </div>
     <p class="scroll-cue">↓ keep scrolling ↓</p>
   </div>
 </section>
@@ -768,12 +793,12 @@
     <p class="sub">A little sneak peek from our countdown to Level 7!</p>
     <!-- Replace photo1.jpg through photo6.jpg with your own photoshoot pictures (6 images) -->
     <div class="photo-grid">
-      <div class="photo-frame"><img src="photo1.jpg" alt="Simon photoshoot picture 1" loading="lazy"></div>
-      <div class="photo-frame"><img src="photo2.jpg" alt="Simon photoshoot picture 2" loading="lazy"></div>
-      <div class="photo-frame"><img src="photo3.jpg" alt="Simon photoshoot picture 3" loading="lazy"></div>
-      <div class="photo-frame"><img src="photo4.jpg" alt="Simon photoshoot picture 4" loading="lazy"></div>
-      <div class="photo-frame"><img src="photo5.jpg" alt="Simon photoshoot picture 5" loading="lazy"></div>
-      <div class="photo-frame"><img src="photo6.jpg" alt="Simon photoshoot picture 6" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9782.jpg" alt="Simon photoshoot picture 1" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9767.jpg" alt="Simon photoshoot picture 2" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9736.jpg" alt="Simon photoshoot picture 3" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9746.jpg" alt="Simon photoshoot picture 4" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9795.jpg" alt="Simon photoshoot picture 5" loading="lazy"></div>
+      <div class="photo-frame"><img src="https://x-nbriones.github.io/birthday-invitation/539A9761.jpg" alt="Simon photoshoot picture 6" loading="lazy"></div>
     </div>
     <p class="scroll-cue">↓ keep scrolling ↓</p>
   </div>
